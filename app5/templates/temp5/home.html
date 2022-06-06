@@ -1,0 +1,31 @@
+{% load static %} 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+<body bgcolor="#6e612a">
+    <center><H1><u> <a href="{% url 'india' %}"> INDIA </a></u></H1>
+        <h2 style="color:crimson ;">WELCOME TO INDIA</h2><BR>
+            <table WIDTH="100%">
+                <tr>
+                    <th><a href="{% url 'kerala' %}"> KERALA</a></th>
+                    <th> <a href="{% url 'goa' %}"> GOA</a></th>
+                    <th><a href="{% url 'rajasthan' %}"> RAJASTHAN</a></th>
+                    <th> <a href="{% url 'kol' %}"> KOLKKATHA</a></th>
+                    <th> <a href="{% url 'kashmir' %}"> KASHMIR</a></th>
+                </tr>
+            </table>
+            <HR>
+             {% block content %}  
+            <img src="{% static 'images/india1.jpg' %}" width="700px" alt=""><br><br><br><br>
+            {% endblock %}
+            <hr>
+            <h2>THANK YOU</h2>
+   
+    </center>
+</body>
+</html>
